@@ -1,14 +1,16 @@
 # Getting Started
 
-# Machine Learning - Acne Type Classification
+## Table of Contents
+- [Getting Started](#getting-started)
+- [Installation](#installation)
+- [Fine-tuning the Model](#fine-tuning-the-model)
+  - [Model Setup](#model-setup)
+  - [Custom Layers](#custom-layers)
+  - [Model Compilation](#model-compilation)
+  - [Training and Evaluation](#training-and-evaluation)
+  - [Pretrained Model](#pretrained-model)
 
-To get started with the acne type classification model and skincare recommendation system, please follow the instructions below:
-
-## Clone this repository:
-- **Acne Type Classification**: [https://github.com/DermaSeer/DermaSeer-classification-model/dataset-acne.git]
-- **Pre-processing Notebook:
-- **Modelling Notebook**: 
-- 
+An acne classification system is a machine learning-based technology designed to analyze and categorize different types of acne based on their visual characteristics. It uses algorithms to detect patterns, features, and distinctive attributes in images of acne, allowing the system to identify and classify new, unseen images into predefined categories. The system is trained on a dataset of labeled acne images, learning to distinguish between five types of acne: Nodules, Fulminans, Papules, Fungal, and Pustules. Once the model is trained, it can accurately classify new images into the appropriate acne type, providing valuable insights for skincare professionals and individuals seeking treatment.
 
 ## Install the required dependencies:
 ```bash
@@ -21,7 +23,7 @@ pip install -r requirements.txt
 To fine-tune the model, we use the **MobileNetV** architecture, which is pretrained on **ImageNet**. The base model is used as the starting point, and we perform **transfer learning** by modifying the model to fit our acne type classification task. Fine-tuning begins from the 50th layer onwards. All layers before the 100th layer are frozen to retain the features learned from ImageNet, while layers after the 50th layer are made trainable to adapt to the acne classification task.
 
 ### 2. **Custom Layers**
-To modify the model for acne type classification, we add the following custom layers on top of the **MobileNetV2** base model:
+To modify the model for acne type classification, we add the following custom layers on top of the **MobileNet** base model:
 
 - **Global Average Pooling**: This layer reduces the spatial dimensions of the feature maps and outputs a single value per feature map. It helps reduce overfitting by lowering the number of parameters.
   
