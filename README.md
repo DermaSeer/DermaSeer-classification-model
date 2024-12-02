@@ -1,4 +1,4 @@
-# DermaSeer-Machine Learning
+# Getting Started
 
 # Machine Learning - Acne Type Classification
 
@@ -12,15 +12,13 @@ To get started with the acne type classification model and skincare recommendati
 
 ## Install the required dependencies:
 ```bash
-pip install python
-pip install keras
-pip install tensorflow
+pip install -r requirements.txt
 ```
 
 ## Fine-tuning the Model
 
 ### 1. **Model Setup**
-To fine-tune the model, we use the **MobileNetV2** architecture, which is pretrained on **ImageNet**. The base model is used as the starting point, and we perform **transfer learning** by modifying the model to fit our acne type classification task. Fine-tuning begins from the 100th layer onwards. All layers before the 100th layer are frozen to retain the features learned from ImageNet, while layers after the 100th layer are made trainable to adapt to the acne classification task.
+To fine-tune the model, we use the **MobileNetV** architecture, which is pretrained on **ImageNet**. The base model is used as the starting point, and we perform **transfer learning** by modifying the model to fit our acne type classification task. Fine-tuning begins from the 50th layer onwards. All layers before the 100th layer are frozen to retain the features learned from ImageNet, while layers after the 50th layer are made trainable to adapt to the acne classification task.
 
 ### 2. **Custom Layers**
 To modify the model for acne type classification, we add the following custom layers on top of the **MobileNetV2** base model:
@@ -54,7 +52,7 @@ During training, the model is fed preprocessed images, and the parameters are up
 The model is trained for a maximum of **50 epochs**, using the **train_generator** for training and **val_generator** for validation. The model’s progress is tracked, and its performance is evaluated on unseen data using the **test_generator**.
 
 ### 5. **Pretrained Model**
-The base model, **MobileNetV2**, is pretrained on **ImageNet**, a large-scale image dataset. This provides a strong foundation for transfer learning, where the model leverages features such as edges, textures, and patterns learned from the ImageNet dataset to perform well on the acne type classification task.
+The base model, **MobileNet**, is pretrained on **ImageNet**, a large-scale image dataset. This provides a strong foundation for transfer learning, where the model leverages features such as edges, textures, and patterns learned from the ImageNet dataset to perform well on the acne type classification task.
 
 By using a pretrained model, we can save computational resources and training time, as the model has already learned general features that can be fine-tuned for the specific acne classification task.
 
