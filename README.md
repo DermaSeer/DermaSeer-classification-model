@@ -6,6 +6,9 @@ To get started with the acne type classification model and skincare recommendati
 
 ## Clone this repository:
 - **Acne Type Classification**: [https://github.com/DermaSeer/DermaSeer-classification-model/dataset-acne.git]
+- **Pre-processing Notebook:
+- **Modelling Notebook**: 
+- 
 
 ## Install the required dependencies:
 ```bash
