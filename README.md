@@ -55,6 +55,6 @@ The model is trained for a maximum of **50 epochs**, using the **train_generator
 The base model, **MobileNet**, is pretrained on **ImageNet**, a large-scale image dataset. This provides a strong foundation for transfer learning, where the model leverages features such as edges, textures, and patterns learned from the ImageNet dataset to perform well on the acne type classification task. By using a pretrained model, we can save computational resources and training time, as the model has already learned general features that can be fine-tuned for the specific acne classification task.
 
 ---
-This fine-tuning approach enables the model to learn to classify acne types effectively, leveraging the power of **MobileNetV2** while adapting the model to the specific needs of the task at hand.
+This fine-tuning approach enables the model to learn to classify acne types effectively, leveraging the power of **MobileNet** while adapting the model to the specific needs of the task at hand.
 
 
