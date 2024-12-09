@@ -11,6 +11,16 @@ An acne classification system is a machine learning-based technology designed to
 - [Training and Evaluation](#training-and-evaluation)
 - [Pretrained Model](#pretrained-model)
 
+## Contributor
+
+| Name                        | Bangkit-ID     | Github-Profile                                       | LinkedIn                                          |
+|-----------------------------|----------------|-----------------------------------------------------|--------------------------------------------------|
+| Chanan Artamma    | M183B4KY0916   | [@Chanan1](https://github.com/Chanan1)         | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/chanan-artamma-586412313/) |
+| Reza Putri Angga             | M296B4KX3788   | [@rrezaputria](https://github.com/rrezaputria)             | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rrezaputriaa/) |
+| Muhammad Aryasatya Nugroho          | M296B4KY2749   | [@arryasatya](https://github.com/arryasatya)             | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/arryasatya/) |
+
+
+
 ## Install the required dependencies:
 ```bash
 pip install -r requirements.txt
